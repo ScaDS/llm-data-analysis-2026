@@ -1,6 +1,6 @@
-# LLMs for BioImage Analysis
+# LLMs for Data Analysis
 
-This notebook collection introduces how to use large language models for bio-image analysis. The materials are rendered to this url:
+This notebook collection introduces how to use large language models for data analysis code generation. The materials are rendered to this url:
 
-https://scads.github.io/llm-bia-2025/intro.html
+https://scads.github.io/llm-da-2026/intro.html
 
