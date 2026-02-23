@@ -1,9 +1,6 @@
 # Setting up your computer
 
-This chapter provides instructions for setting up your computer to run Python to analyse images.
-
-**NOTE:** As preparation of the course you do not need to install anything on your computer because everything will be installed on virtual machines for you and you can access them from the course computer room. However, _in case_ you want to play with the tools on your own computer, just follow these installation instructions below.
-
+This chapter provides instructions for setting up your computer to run Python to analyse data.
 
 # Setting up Python and Conda environments
 When working with Python, we will make use of many plugins and software libraries which need to be organized.
@@ -26,25 +23,24 @@ For ease-of-use, it is recommended to install it for your use only and to add Co
 
 ![img.png](miniforge2.png)
 
-## Step 2: Install devbio-napari
+## Step 2: Install 
 
-We recommend installing [devbio-napari](https://github.com/haesleinhuepf/devbio-napari), a distribution of napari with a set of plugins for bioimage analysis.
 
 Use this command from the terminal:
 
 ```
-conda create --name embo25 python=3.11 pyqt devbio-napari napari=0.5.6 pyclesperanto -c conda-forge
+conda create --name llm-da python=3.11 -c conda-forge
 ```
 
 Afterwards, activate the environment:
 
 ```
-conda activate embo25
+conda activate llm-da
 ```
 
 For technical reasons, also this is required at the moment:
 ```
-pip install napari-assistant==0.6.0 numpy==1.26.4 bia-bob python-dotenv
+pip install pyclesperanto bia-bob python-dotenv numpy scipy pandas scikit-learn scikit-image umap-learn cellpose jupyterlab stackview
 ```
 
 **Tip**: It is recommended to create one environment for every project you are executing. 
@@ -55,7 +51,7 @@ In that way installed software libraries and tools cannot harm each other.
 Whenever you want to work on the same project, you should start a command line and enter this:
 
 ```
-conda activate embo25
+conda activate llm-da
 ```
 
 Start [Jupyter lab](https://jupyter.org/) from the terminal like this
@@ -72,16 +68,6 @@ In the new notebook, click in the first code cell, enter `print("Hello world")` 
 If everything is installed properly, it should look like this:
 
 ![img.png](hello_world.png)
-
-To test if your graphics card driver is properly installed, enter this code:
-
-```
-import pyclesperanto_prototype as cle
-
-cle.get_device()
-```
-
-![img.png](test_opencl.png)
 
 
 ## Troubleshooting: Graphics cards drivers
@@ -103,6 +89,18 @@ Sometimes, mac-users need to install this:
 Sometimes, linux users need to install this:
 
     conda install -c conda-forge ocl-icd-system
+
+To test if your graphics card driver is properly installed, enter this code in a Jupyter notebook:
+
+```
+import pyclesperanto_prototype as cle
+
+cle.get_device()
+```
+
+![img.png](test_opencl.png)
+
+
 
 ## Troubleshooting: DLL load failed
 
