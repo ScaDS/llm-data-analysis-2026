@@ -56,8 +56,6 @@ After executing this, you can start Jupyter Lab. On the left side you find folde
 
 * [bia-bob](https://github.com/haesleinhuepf/bia-bob): AI-assisted BioImage Analysis Code Generation
 * [numpy](https://numpy.org/): Basic numeric Processing
-* [napari](https://napari.org): An interactive nD image viewer
-* [napari-assistant](https://github.com/haesleinhuepf/napari-assistant): A pocket-calculator like user interface to build image processing workflows
 * [pandas](https://pandas.pydata.org/): tabular data processing
 * [pyclesperanto](https://github.com/clesperanto/pyclesperanto): GPU-accelerated image processing
 * [scikit-learn](https://scikit-learn.org/): Applied machine learning 

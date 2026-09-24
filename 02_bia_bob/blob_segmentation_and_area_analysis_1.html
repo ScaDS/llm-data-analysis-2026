@@ -760,9 +760,9 @@ title="Print to PDF"
 <p>Das Bild <em>blobs.tif</em> befindet sich im Ordner <code class="docutils literal notranslate"><span class="pre">data</span></code>. Wir lesen es mit <strong>skimage.io.imread</strong> und geben seine Form aus.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;blobs.tif&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="s1">'blobs.tif'</span><span class="p">)</span>
 <span class="n">image</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Bildform:&#39;</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Bildform:'</span><span class="p">,</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="n">stackview</span><span class="o">.</span><span class="n">insight</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -801,12 +801,12 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">props</span> <span class="o">=</span> <span class="n">regionprops_table</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span>
                          <span class="n">intensity_image</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                         <span class="n">properties</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">,</span> <span class="s1">&#39;area&#39;</span><span class="p">])</span>
+                         <span class="n">properties</span><span class="o">=</span><span class="p">[</span><span class="s1">'label'</span><span class="p">,</span> <span class="s1">'area'</span><span class="p">])</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">props</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 
-<span class="n">average_area</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;area&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Durchschnittliche Fläche der Blobs:&#39;</span><span class="p">,</span> <span class="n">average_area</span><span class="p">)</span>
+<span class="n">average_area</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'area'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Durchschnittliche Fläche der Blobs:'</span><span class="p">,</span> <span class="n">average_area</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -914,7 +914,7 @@ By Robert Haase
   
   <div class="footer-item">
     <p class="last-updated">
-Last updated on 2026-03-05.<br>
+Last updated on 2026-09-24.<br>
 </p>
   </div>
   
