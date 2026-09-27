@@ -22,6 +22,7 @@ parts:
     - file: 02_bia_bob/translating_notebooks.ipynb
     - file: 02_bia_bob/documenting_code.ipynb
     - file: 02_bia_bob/bug_fixing.ipynb
+    - file: 02_bia_bob/mistral.ipynb
 
   - caption: Use-cases
     chapters:
@@ -31,8 +32,10 @@ parts:
     
   - caption: Links
     chapters:
+    - url: https://doi.org/10.5281/zenodo.23000180 
+      title: Slides (Talk in Lyon)
     - url: https://doi.org/10.5281/zenodo.18879906 
-      title: Slides
+      title: Slides (Talk in Copenhagen)
     - url: https://creativecommons.org/licenses/by/4.0/
       title: License CC-BY 4.0
     - file: imprint
