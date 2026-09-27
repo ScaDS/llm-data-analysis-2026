@@ -205,6 +205,13 @@ const thebe_selector_output = ".output, .cell_output"
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="mistral.html">
+                        Using Mistral.AI (optional exercise)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="bia_bob-statistical_testing.html">
                         Statistical testing
                       </a>
@@ -226,8 +233,15 @@ const thebe_selector_output = ".output, .cell_output"
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://doi.org/10.5281/zenodo.23000180">
+                        Slides (Talk in Lyon)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-external" href="https://doi.org/10.5281/zenodo.18879906">
-                        Slides
+                        Slides (Talk in Copenhagen)
                       </a>
                     </li>
                 
@@ -290,10 +304,6 @@ const thebe_selector_output = ".output, .cell_output"
     </div>
   
 
-  
-  <label class="sidebar-toggle secondary-toggle" for="__secondary">
-      <span class="fa-solid fa-outdent"></span>
-  </label>
   
 
 </div>
@@ -387,6 +397,13 @@ const thebe_selector_output = ".output, .cell_output"
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="mistral.html">
+                        Using Mistral.AI (optional exercise)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="bia_bob-statistical_testing.html">
                         Statistical testing
                       </a>
@@ -408,8 +425,15 @@ const thebe_selector_output = ".output, .cell_output"
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-external" href="https://doi.org/10.5281/zenodo.23000180">
+                        Slides (Talk in Lyon)
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-external" href="https://doi.org/10.5281/zenodo.18879906">
-                        Slides
+                        Slides (Talk in Copenhagen)
                       </a>
                     </li>
                 
@@ -514,10 +538,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bia-bob-demo.html">BiA-Bob</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">AI-assisted Notebook generation</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="translating_notebooks.html">Translating notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="documenting_code.html">Documenting code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bug_fixing.html">Bug fixing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mistral.html">Using Mistral.AI (optional exercise)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-cases</span></p>
 <ul class="nav bd-sidenav">
@@ -527,7 +551,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference external" href="https://doi.org/10.5281/zenodo.18879906">Slides</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://doi.org/10.5281/zenodo.23000180">Slides (Talk in Lyon)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://doi.org/10.5281/zenodo.18879906">Slides (Talk in Copenhagen)</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">License CC-BY 4.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../imprint.html">Imprint</a></li>
 
@@ -674,9 +699,7 @@ title="Print to PDF"
       
   </ul>
 </div>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
-            <span class="fa-solid fa-list"></span>
-        </label>
+
     </div>
 </div>
             </div>
@@ -689,24 +712,6 @@ title="Print to PDF"
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   AI-assisted Notebook generation
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercise">
-   Exercise
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -735,33 +740,28 @@ LLMs make mistakes.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-            <div style="font-size:7pt">
-            This notebook may contain text, code and images generated by artificial intelligence.
-            Used model: openai/gpt-oss-120b, vision model: None, endpoint: https://llm.scads.ai/v1, bia-bob version: 0.34.3.. Do not enter sensitive or private information and verify generated contents according to good scientific practice. Read more: <a href="https://github.com/haesleinhuepf/bia-bob#disclaimer">https://github.com/haesleinhuepf/bia-bob#disclaimer</a>
-            </div>
-            </div></div>
 </div>
 <p>When formulating a complex task to <code class="docutils literal notranslate"><span class="pre">bia-bob</span></code>, go step-by-step, make bullet points and try to provide as many details as you can. Keep in mind: Bob cannot see what you see. It only knows about some python functions for image analysis and the text you write to it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bob</span> generate a jupyter notebook that 
-* loads data/blobs.tif
-* segments the bright blobs using thresholding and connected component labeling
-* measures the area of the objects
-* prints out the average area
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bob</span>
+Generate a new Jupyter Notebook which does that:
+* Load data/maize.tif
+* Apply the Watershed algorithm to it to segment 
+  dark objects between bright membranes
+* Visualize the result using a curtain
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p>A notebook has been saved as <a class="reference external" href="blob_segmentation_and_area_analysis.ipynb">blob_segmentation_and_area_analysis.ipynb</a>.</p>
+<div class="output text_html">
+        <div style="font-size:7pt">
+        This notebook may contain text, code and images generated by artificial intelligence.
+        Used model: openai/gpt-oss-120b, vision model: None, fast_model: None, endpoint: https://llm.scads.ai/v1, bia-bob version: 0.36.3.. Do not enter sensitive or private information and verify generated contents according to good scientific practice. Read more: <a href="https://github.com/haesleinhuepf/bia-bob#disclaimer">https://github.com/haesleinhuepf/bia-bob#disclaimer</a>
+        </div>
+        </div><p>A notebook has been saved as <a class="reference external" href="maize_watershed_curtain_visualization.ipynb">maize_watershed_curtain_visualization.ipynb</a>.</p>
 </div>
 </div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="exercise">
-<h1>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading">#</a></h1>
-<p>Ask Bob to measure area and perimeter of the objects and plot them against each other.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -813,32 +813,6 @@ LLMs make mistakes.</p>
           
           
           
-            <div class="bd-sidebar-secondary bd-toc">
-              
-<div class="toc-item">
-  
-<div class="tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-</div>
-<nav id="bd-toc-nav" class="page-toc">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   AI-assisted Notebook generation
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exercise">
-   Exercise
-  </a>
- </li>
-</ul>
-
-</nav>
-</div>
-
-            </div>
-          
           
         </div>
         <footer class="bd-footer-content">
@@ -860,7 +834,7 @@ By Robert Haase
   
   <div class="footer-item">
     <p class="last-updated">
-Last updated on 2026-09-26.<br>
+Last updated on 2026-09-27.<br>
 </p>
   </div>
   
