@@ -32,7 +32,7 @@ parts:
     
   - caption: Links
     chapters:
-    - url: https://doi.org/10.5281/zenodo.23000180 
+    - url: https://zenodo.org/records/23000181 
       title: Slides (Talk in Lyon)
     - url: https://doi.org/10.5281/zenodo.18879906 
       title: Slides (Talk in Copenhagen)
